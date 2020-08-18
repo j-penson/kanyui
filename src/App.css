@@ -1,0 +1,29 @@
+body {
+  /*background-image: url(images/kanye_large.png);*/
+  /*background-size: cover;*/
+  /*background-position: center;*/
+  /*background-attachment: fixed;*/
+  min-height: 100vh;
+  font-family: "Courier New" !important;
+}
+
+
+.text {
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+  box-shadow:rgba(0,0,0,1) 0px 0px 20px;
+  width:80%;
+  color: white;
+  border: solid 1px transparent;
+  outline: none;
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.text_input {
+  margin: 100px auto;
+}
+
+.dark {
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+}
