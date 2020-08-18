@@ -33,7 +33,7 @@ class App extends React.Component {
 
         console.log(`getting song ${this.state.songInput}`)
 
-        axios.post('http://localhost:8081', {input: this.state.songInput}, {headers: {'Content-Type': 'application/json'}})
+        axios.post('http://0.0.0.0:8081', 'input='+this.state.songInput)
             .then(res => {
                 this.setState({
                     songOutput: res.data,
@@ -42,7 +42,10 @@ class App extends React.Component {
                 })
 
                 console.log(`song is ${this.state.songOutput}`);
-            })
+
+            }, (error) => {
+                console.log(error);
+            });
 
 
     }
