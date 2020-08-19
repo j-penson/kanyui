@@ -1,4 +1,6 @@
+# kanyui
 
+https://github.com/j-penson/kanyui/workflows/kanyui-push/badge.svg
 
 KanyUI is the UI for https://github.com/mxdillon/kanyai
 
