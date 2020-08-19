@@ -1,7 +1,7 @@
 # kanyui
 
 
-![CI-build](https://github.com/j-penson/kanyui/workflows/kanyui-push/badge.svg)
+![CI-build](https://github.com/j-penson/kanyui/workflows/CI-build/badge.svg)
 
 KanyUI is the UI for https://github.com/mxdillon/kanyai
 
