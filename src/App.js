@@ -73,7 +73,8 @@ class App extends React.Component {
                                        name="lyricInput"
                                        value={this.state.songInput}
                                        className="text_input text"
-                                       style={{color: '#7A7A7A'}}
+                                       style={{color: '#7A7A7A', width: "750px"}}
+                                       placeholder="Enter title"
                                        onChange={this.handleChange}/>
                             </label>
                             {this.state.showOutput &&

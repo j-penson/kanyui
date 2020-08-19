@@ -1,8 +1,4 @@
 body {
-  /*background-image: url(images/kanye_large.png);*/
-  /*background-size: cover;*/
-  /*background-position: center;*/
-  /*background-attachment: fixed;*/
   min-height: 100vh;
   font-family: "Courier New" !important;
 }
@@ -17,7 +13,8 @@ body {
   outline: none;
   font-size: 20px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 5px auto;
+  white-space: pre-wrap;
 }
 
 .text_input {
