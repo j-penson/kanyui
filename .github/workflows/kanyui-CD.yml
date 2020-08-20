@@ -40,6 +40,6 @@ jobs:
                                         --project $PROJECT_ID \
                                         --region europe-west1 \
                                         --platform managed \
-                                        --memory 1Gi \
+                                        --memory 0.1Gi \
                                         --timeout=300 \
                                         --concurrency=2
