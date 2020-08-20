@@ -5,7 +5,6 @@ on:
       - 'master'
 
 env:
-  PROJECT_ID: ${{ secrets.GCLOUD_PROJECT }}
   SERVICE_NAME: kanyui
 
 jobs:
@@ -27,17 +26,17 @@ jobs:
       # Build and publish the Docker image to Google Container Registry
       - name: Build and Publish
         env:
-          CLOUDSDK_CORE_PROJECT: $PROJECT_ID
+          CLOUDSDK_CORE_PROJECT: kanyai
         run: |
-          gcloud builds submit --tag "gcr.io/$PROJECT_ID/$SERVICE_NAME:$GITHUB_SHA"
+          gcloud builds submit --tag "gcr.io/kanyai/$SERVICE_NAME:$GITHUB_SHA"
 
       # Deploy the Docker image to the GKE cluster
       - name: Deploy
         run: |
           gcloud components install beta && \
           gcloud beta run deploy "$SERVICE_NAME" --quiet \
-                                        --image "gcr.io/$PROJECT_ID/$SERVICE_NAME:$GITHUB_SHA" \
-                                        --project "$PROJECT_ID" \
+                                        --image "gcr.io/kanyai/$SERVICE_NAME:$GITHUB_SHA" \
+                                        --project kanyai \
                                         --region europe-west1 \
                                         --platform managed \
                                         --memory 128Mi \
