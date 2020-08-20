@@ -1,6 +1,7 @@
 # kanyUI
 
 ![CI-build](https://github.com/j-penson/kanyui/workflows/CI-build/badge.svg)
+![CD-build](https://github.com/j-penson/kanyui/workflows/CD-build/badge.svg)
 
 kanyUI is the front-end for [kanyAI](https://github.com/mxdillon/kanyai).
 
