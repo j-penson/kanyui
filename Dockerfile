@@ -11,5 +11,6 @@ RUN npm run build
 # Stage 2 - the production environment
 FROM nginx:alpine
 COPY --from=react-build usr/src/app/build /usr/share/nginx/html
-EXPOSE 80
+ENV PORT 8080
+EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
