@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
 
       # Setup gcloud CLI
       - name: Setup GCloud
         uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
-          version: '270.0.0'
+          version: '290.0.1'
           service_account_key: ${{ secrets.GCLOUD_AUTH }}
           export_default_credentials: true
 
