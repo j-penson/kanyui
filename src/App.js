@@ -33,7 +33,9 @@ class App extends React.Component {
 
         console.log(`getting song ${this.state.songInput}`)
 
-        axios.post('http://0.0.0.0:8081', 'input='+this.state.songInput)
+        let modelURL = 'https://europe-west2-kanyai.cloudfunctions.net/kanyai/get_lyrics '
+
+        axios.post(modelURL, 'input='+this.state.songInput)
             .then(res => {
                 this.setState({
                     songOutput: res.data,

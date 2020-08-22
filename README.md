@@ -25,7 +25,7 @@ npm start
 docker build -t kanyui .
 
 # Run and serve on localhost:8080
-docker run -p 8080:80 kanyui
+docker run p 8080:8080 kanyui
 ```
 
 
