@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar';
 import StaticImage from './images/kanye_large.png';
 import MeltingImage from './images/kanye_melting.gif';
 import axios from "axios";
+import {RemoveScrollBar} from 'react-remove-scroll-bar';
 
 class App extends React.Component {
 
@@ -43,7 +44,7 @@ class App extends React.Component {
                     showOutput: true
                 })
 
-                console.log(`song is ${this.state.songOutput}`);
+                console.log(`Lyrics generated: ${this.state.songOutput}`);
 
             }, (error) => {
                 console.log(error);
@@ -66,16 +67,16 @@ class App extends React.Component {
             <div className="App" style={divStyle}>
 
                 <NavBar/>
+                <RemoveScrollBar/>
 
                 <div className="row justify-content-center">
-                    <div className="col-lg-12 text-center">
                         <form onSubmit={this.handleSubmit}>
                             <label>
                                 <input type="text"
                                        name="lyricInput"
                                        value={this.state.songInput}
                                        className="text_input text"
-                                       style={{color: '#7A7A7A', width: "750px"}}
+                                       style={{color: '#7A7A7A', width:"80%"}}
                                        placeholder="Enter title"
                                        onChange={this.handleChange}/>
                             </label>
@@ -85,12 +86,11 @@ class App extends React.Component {
                             </div>}
                         </form>
                     </div>
-                </div>
-            </div>
+                  </div>
 
 
         )
     }
-};
+}
 
 export default App;
