@@ -18,7 +18,8 @@ body {
 }
 
 .text_input {
-  margin: 100px auto;
+  margin-top: 75px;
+  margin-bottom: 50px;
 }
 
 .dark {
