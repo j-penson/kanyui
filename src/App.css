@@ -1,27 +1,28 @@
 body {
-  min-height: 100vh;
-  font-family: "Courier New" !important;
+    min-height: 100vh;
+    font-family: "Courier New" !important;
 }
 
-
 .text {
-  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
-  box-shadow:rgba(0,0,0,1) 0px 0px 20px;
-  width:80%;
-  color: black;
-  border: solid 1px transparent;
-  outline: none;
-  font-size: 20px;
-  padding: 20px;
-  margin: 5px auto;
-  white-space: pre-wrap;
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
+    color: black;
+    border: solid 1px transparent;
+    outline: none;
+    font-size: 20px;
+    padding: 20px;
 }
 
 .text_input {
-  margin-top: 75px;
-  margin-bottom: 50px;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.text_output {
+    margin: 5px auto;
+    white-space: pre-wrap;
 }
 
 .dark {
-  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
 }
