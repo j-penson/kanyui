@@ -4,7 +4,6 @@ import NavBar from './Components/NavBar';
 import StaticImage from './images/kanye_large.png';
 import MeltingImage from './images/kanye_melting.gif';
 import axios from "axios";
-import {RemoveScrollBar} from 'react-remove-scroll-bar';
 
 class App extends React.Component {
 
@@ -67,9 +66,9 @@ class App extends React.Component {
             <div className="App" style={divStyle}>
 
                 <NavBar/>
-                <RemoveScrollBar/>
 
                 <div className="row justify-content-center">
+                  <div className="col-lg-12 text-center">
                         <form onSubmit={this.handleSubmit}>
                             <label>
                                 <input type="text"
@@ -87,6 +86,7 @@ class App extends React.Component {
                         </form>
                     </div>
                   </div>
+                </div>
 
 
         )
