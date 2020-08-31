@@ -35,7 +35,7 @@ class App extends React.Component {
 
         let modelURL = 'https://europe-west2-kanyai.cloudfunctions.net/kanyai/get_lyrics '
 
-        axios.post(modelURL, 'input='+this.state.songInput)
+        axios.post(modelURL, 'input=' + this.state.songInput)
             .then(res => {
                 this.setState({
                     songOutput: res.data,
@@ -68,26 +68,26 @@ class App extends React.Component {
                 <NavBar/>
 
                 <div className="form-group justify-content-center">
-                  <div className="col-lg-auto text-center">
+                    <div className="col-lg-auto text-center">
                         <form onSubmit={this.handleSubmit}>
-                                <input type="text"
-                                       name="lyricInput"
-                                       value={this.state.songInput}
-                                       className="text text_input"
-                                       style={{color: '#7A7A7A', width: "750px"}}
-                                       placeholder="Enter title"
-                                       autoComplete="off"
-                                       onChange={this.handleChange}/>
+                            <input type="text"
+                                   name="lyricInput"
+                                   value={this.state.songInput}
+                                   className="text text_input"
+                                   style={{color: '#7A7A7A', width: "750px"}}
+                                   placeholder="Enter title"
+                                   autoComplete="off"
+                                   onChange={this.handleChange}/>
                             {this.state.showOutput &&
                             <div className="text text_output" style={{color: '#7A7A7A'}}>
                                 {this.state.songOutput}
                             </div>}
                         </form>
-                  </div>
+                    </div>
                 </div>
 
 
-    </div>
+            </div>
 
 
         )

@@ -1,12 +1,11 @@
 import React from 'react';
-import {mount} from 'enzyme';
 import App from './App';
 import renderer from 'react-test-renderer'
 
 describe('App snapshot', () => {
-  it('should render snapshot', () => {
-    const component = renderer.create(<App/>);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+    it('should render snapshot', () => {
+        const component = renderer.create(<App/>);
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+    });
 });
