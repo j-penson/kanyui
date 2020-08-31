@@ -68,23 +68,26 @@ class App extends React.Component {
                 <NavBar/>
 
                 <div className="form-group justify-content-center">
-                  <div className="col-lg-12 text-center">
+                  <div className="col-lg-auto text-center">
                         <form onSubmit={this.handleSubmit}>
                                 <input type="text"
                                        name="lyricInput"
                                        value={this.state.songInput}
                                        className="text text_input"
-                                       style={{color: '#7A7A7A'}}
+                                       style={{color: '#7A7A7A', width: "750px"}}
                                        placeholder="Enter title"
+                                       autoComplete="off"
                                        onChange={this.handleChange}/>
                             {this.state.showOutput &&
                             <div className="text text_output" style={{color: '#7A7A7A'}}>
                                 {this.state.songOutput}
                             </div>}
                         </form>
-                    </div>
                   </div>
                 </div>
+
+
+    </div>
 
 
         )
