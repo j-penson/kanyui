@@ -19,7 +19,7 @@ body {
 }
 
 .text_output {
-    margin: 5px auto;
+    /*margin: 5px auto;*/
     white-space: pre-wrap;
 }
 
