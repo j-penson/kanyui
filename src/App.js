@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import './App.css';
 import NavBar from './Components/NavBar';
 import StaticImage from './images/kanye_large.png';
@@ -67,7 +67,7 @@ class App extends React.Component {
 
                 <NavBar/>
 
-                <div className="justify-content-center">
+                <div className="form-group justify-content-center">
                     <div className="col-lg-auto text-center">
                         <form onSubmit={this.handleSubmit}>
                             <input type="text"
